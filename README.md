@@ -85,6 +85,14 @@ num_variables;domains_size;density;durete;solver_type;time;iterations;result
 5;3;0.3;0.3;backjumping;2.5987625122070312e-05;7;{'X1': 1, 'X2': 1, 'X3': 2, 'X4': 1, 'X5': 3}
 ```
 
+View it as a table:
+
+| num_variables | domains_size | density | durete | solver_type     | time (s)          | iterations | result |
+| ------------- | ------------ | ------- | ------ | --------------- | ----------------- | ---------- | ------ |
+| 5             | 3            | 0.3     | 0.3    | backtracking    | 3.1948089599609375e-05     | 20      | {'X1': 1, 'X2': 1, 'X3': 2, 'X4': 1, 'X5': 3}             |
+| 5             | 3            | 0.3     | 0.3    | forward_checking| 3.504753112792969e-05      | 7          | {'X1': 1, 'X2': 1, 'X3': 2, 'X4': 1, 'X5': 3}             |
+| 5             | 3            | 0.3     | 0.3    | backjumping     | 2.5987625122070312e-05     | 7          | {'X1': 1, 'X2': 1, 'X3': 2, 'X4': 1, 'X5': 3}             |
+
 ## Authors
 
 - [Maxence ZOLNIERUCK](https://www.linkedin.com/in/maxence-zol/)

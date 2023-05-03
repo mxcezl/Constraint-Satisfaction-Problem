@@ -10,14 +10,14 @@ This project is a simple implementation of a CSP solver. It contains a simple CS
 
 The generator is a simple python script that generates a CSP problem.
 
-You can find it under the `libs` folder as `CSPGenerator.py`.
+You can find it under the `libs` folder as [`CSPGenerator.py`](./libs/CSPGenerator.py).
 
 Inside that file, you'll find a class named `CSPGenerator`. This class has 4 attributes:
 
-- num_variables : The number of variables in the CSP problem
-- domains_size : The number of values per variable
-- density : The density of the CSP problem between 0 and 1 (1 by default)
-- durete : The hardness of the CSP problem between 0 and 1 (1 by default)
+- **num_variables** : The number of variables in the CSP problem
+- **domains_size** : The number of values per variable
+- **density** : The density of the CSP problem between 0 and 1 (1 by default)
+- **durete** : The hardness of the CSP problem between 0 and 1 (1 by default)
 
 Exemple:
 
@@ -39,7 +39,7 @@ Constraints :  {('X1', 'X2'): [(1, 1), (1, 2), (2, 1), (3, 3)], ('X1', 'X3'): [(
 
 The solver is a simple python script that solves a CSP problem created by the generator.
 
-You can find it under the `libs` folder as `CSPSolver.py`.
+You can find it under the `libs` folder as [`CSPSolver.py`](./libs/CSPSolver.py).
 
 Inside that file, you'll find a class named `CSPSolver`. This class can solve a CSP with 3 different algorithms:
 
@@ -61,20 +61,20 @@ You can change the algorithm by changing the string in the `solve` function with
 
 ## Results
 
-There is a `main.py` file at the root of the project that generates a CSP problem and solves it with the 3 algorithms.
+There is a [`main.py`](./main.py) file at the root of the project that generates a CSP problem and solves it with the 3 algorithms.
 
 Each run will be stored and save a csv file as òutput.csv` in the root of the project.
 
 This report file will contain the following information:
 
-- num_variables : The number of variables in the CSP problem
-- domains_size : The number of values per variable
-- density : The density of the CSP problem between 0 and 1 (1 by default)
-- durete : The hardness of the CSP problem between 0 and 1 (1 by default)
-- solver_type : The type of solver used to solve the CSP problem
-- time : The time in seconds it took to solve the CSP problem
-- iterations : The number of iterations it took to solve the CSP problem
-- result : The result of the CSP problem
+- **num_variables** : The number of variables in the CSP problem
+- **domains_size** : The number of values per variable
+- **density** : The density of the CSP problem between 0 and 1 (1 by default)
+- **durete** : The hardness of the CSP problem between 0 and 1 (1 by default)
+- **solver_type** : The type of solver used to solve the CSP problem
+- **time** : The time in seconds it took to solve the CSP problem
+- **iterations** : The number of iterations it took to solve the CSP problem
+- **result** : The result of the CSP problem
 
 Exemple:
 

@@ -113,4 +113,3 @@ class CSPGenerator:
 if __name__ == "__main__":
     csp = CSPGenerator(4, 3, 1, 0.5)
     csp.print_csp()
-    

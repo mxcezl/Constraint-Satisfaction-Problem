@@ -111,5 +111,5 @@ class CSPGenerator:
         return "CSPGenerator : " + str(self.num_variables) + " variables, " + str(self.domains_size) + " domains size, " + str(self.density) + " density, " + str(self.durete) + " durete"
 
 if __name__ == "__main__":
-    csp = CSPGenerator(4, 3, 1, 0.5)
+    csp = CSPGenerator(num_variables=4, domains_size=3, density=1, durete=0.5)
     csp.print_csp()
